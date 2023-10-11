@@ -2,8 +2,8 @@
      "name": "my-portfolio", 
      "version": "1.0.0", 
      "private": true, 
-     "homepage": "https://github.com/ConnectedDot/ConnectedDot.github.io", 
-     "dependencies": { 
+     "homepage": "http://ConnectedDot.github.io/portfolio",
+          "dependencies": { 
          "bootstrap": "^5.2.3", 
          "emailjs-com": "^3.2.0", 
          "react": "^18.2.0", 
@@ -23,7 +23,7 @@
          "deploy": "gh-pages-d build", 
          "build": "react-scripts build", 
          "test": "react-scripts test", 
-         "eject": "react-scripts eject", 
+         "eject": "react-scripts eject"
   
      }, 
      "eslintConfig": { 

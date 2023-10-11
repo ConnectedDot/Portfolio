@@ -15,7 +15,7 @@ const introdata = {
     first: "I love coding",
     second: "I design cool websites",
     third: "I develop responsive front-ends",
-    fourth: "I'm very much part and always part of the Open Source",
+    fourth: "Very much part of the Open Source",
   },
   description:
     "I'm a Research Manager, providing digital, marketing and media support to businesses (both P2P and B2B). Also an accelerator, responsible for some of Harambee's key learning and knowledge streams, that includes providing education, opportunities for youth in the space of micro-technology. Also an economist & policy strategist passionate about optimizing the conditions for human thriving. My work focuses on understanding the policy building blocks and helping Startups solve complex problems. To cap, I have more than 5 Year experience as a media personnel who featured for multiple projects for brands and Startups in boosting online presence, video-conferencing and webinars.",
