@@ -277,15 +277,15 @@ const datacontributions = [
 ];
 
 const contactConfig = {
-  YOUR_EMAIL: "name@domain.com",
-  YOUR_FONE: "(555)123-4567",
+  YOUR_EMAIL: "theophilus@iconnects.tech",
+  YOUR_FONE: "(234)08145045163",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    "I'm a Research Manager, providing digital, marketing and media support to businesses (both P2P and B2B).",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "service_id",
-  YOUR_TEMPLATE_ID: "template_id",
-  YOUR_USER_ID: "user_id",
+  YOUR_SERVICE_ID: "service_g60lp9i",
+  YOUR_TEMPLATE_ID: "template_f0nmnj9",
+  YOUR_PUBLIC_KEY: "ZM28gd8CKnVkb_u7M",
 };
 
 const socialprofils = {

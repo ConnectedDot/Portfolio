@@ -5,11 +5,16 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
+import { introdata } from "../../content_option";
+import { useNavigate } from "react-router-dom";
 
 export const ContactUs = () => {
+  const navigate = useNavigate();
   const [formData, setFormdata] = useState({
     email: "",
+    phone: "",
     name: "",
+    title: "",
     message: "",
     loading: false,
     show: false,
@@ -22,10 +27,12 @@ export const ContactUs = () => {
     setFormdata({ loading: true });
 
     const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
-      to_name: contactConfig.YOUR_EMAIL,
+      from_name: formData.name,
+      to_name: introdata.title,
+      email: formData.email,
+      phone: formData.phone,
       message: formData.message,
+      title: formData.title,
     };
 
     emailjs
@@ -33,22 +40,26 @@ export const ContactUs = () => {
         contactConfig.YOUR_SERVICE_ID,
         contactConfig.YOUR_TEMPLATE_ID,
         templateParams,
-        contactConfig.YOUR_USER_ID
+        contactConfig.YOUR_PUBLIC_KEY
       )
       .then(
         (result) => {
           console.log(result.text);
           setFormdata({
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage:
+              "SUCCESS!, Thank you for your messege, we will get back to you shortly",
             variant: "success",
             show: true,
           });
+          setTimeout(() => {
+            navigate("/");
+          }, 5000);
         },
         (error) => {
           console.log(error.text);
           setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
+            alertmessage: `Faild to send!, ${error.text}`,
             variant: "danger",
             show: true,
           });
@@ -134,6 +145,30 @@ export const ContactUs = () => {
                     placeholder="Email"
                     type="email"
                     value={formData.email || ""}
+                    required
+                    onChange={handleChange}
+                  />
+                </Col>
+                <Col lg="6" className="form-group">
+                  <input
+                    className="form-control rounded-0"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone"
+                    type="phone"
+                    value={formData.phone || ""}
+                    required
+                    onChange={handleChange}
+                  />
+                </Col>
+                <Col lg="6" className="form-group">
+                  <input
+                    className="form-control rounded-0"
+                    id="title"
+                    name="title"
+                    placeholder="Subject Title"
+                    type="message"
+                    value={formData.title || ""}
                     required
                     onChange={handleChange}
                   />
