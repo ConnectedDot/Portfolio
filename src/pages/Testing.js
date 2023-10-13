@@ -14,6 +14,7 @@ export const ContactUs = () => {
         form.current,
         "YOUR_PUBLIC_KEY"
       )
+
       .then(
         (result) => {
           console.log(result.text);
