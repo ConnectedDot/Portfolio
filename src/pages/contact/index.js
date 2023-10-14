@@ -48,7 +48,7 @@ export const ContactUs = () => {
           setFormdata({
             loading: false,
             alertmessage:
-              "SUCCESS!, Thank you for your messege, we will get back to you shortly",
+              "SUCCESS!, Thank you for your messege, we will get back to you shortly!",
             variant: "success",
             show: true,
           });

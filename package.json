@@ -1,34 +1,32 @@
 {
-  "name": "my-portfolio",
-  "version": "1.0.0",
-  "private": true,
-  "homepage": "http://ConnectedDot.github.io/portfolio",
-  "dependencies": {
-    "bootstrap": "^5.2.3",
-    "emailjs-com": "^3.2.0",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.7.0",
-    "react-dom": "^18.2.0",
-    "react-helmet-async": "^1.0.7",
-    "react-icons": "^4.1.0",
-    "react-router-dom": "^6.6.2",
-    "react-scripts": "^5.0.1",
-    "react-transition-group": "^4.4.2",
-    "typewriter-effect": "^2.18.2",
-    "web-vitals": "^3.1.1"
-  },
+  "name": "portfolio",
+  "licence": "MIT",
+  "author": "theophilus Samuel",
+  "description": "My portfolio using react",
+  "main": "index.js",
+  "license": "MIT",
+  "version": "1.7.0",
+  "private": false,
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.jsx ./src",
+    "lint:fix": "eslint --fix --ext .js,.jsx ./src",
+    "clear-all": "rm -rf build node_modules",
+    "re-start": "rm -rf build node_modules && yarn install && yarn start",
+    "re-build": "rm -rf build node_modules && yarn install && yarn build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
     ]
   },
   "browserslist": {
@@ -43,10 +41,20 @@
       "last 1 safari version"
     ]
   },
-  "description": "My portfolio using react",
-  "main": "index.js",
-  "author": "theophilus Samuel",
-  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "emailjs-com": "^3.2.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^1.0.7",
+    "react-icons": "^4.1.0",
+    "react-router-dom": "^6.6.2",
+    "react-scripts": "^5.0.1",
+    "react-transition-group": "^4.4.2",
+    "typewriter-effect": "^2.18.2",
+    "web-vitals": "^3.1.1"
+  },
   "devDependencies": {
     "gh-pages": "^6.0.0"
   }
