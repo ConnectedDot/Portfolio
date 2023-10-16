@@ -134,6 +134,7 @@ export const ContactUs = () => {
                     value={formData.name || ""}
                     type="text"
                     required
+                    style={{ "::placeholder": { color: "red" } }}
                     onChange={handleChange}
                   />
                 </Col>

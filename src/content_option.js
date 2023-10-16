@@ -1,5 +1,6 @@
 import logo from "../src/assets/20220502_150835.jpg";
 import port1 from "../src/assets/images/port1.jpg";
+import screen1 from "../src/assets/images/Screen1.png";
 
 const logotext = "THEOPHILUS";
 const logobrand = "ConnectedDot";
@@ -127,10 +128,10 @@ const services = [
 
 const dataportfolio = [
   {
-    img: { port1 },
+    img: "blob:https://vercel.com/85bc7a3b-c4fb-4412-bff6-6e6599f1c683",
     description:
       "Here is a Attendance Management System using QR Code and Face Scanner.",
-    link: "https://aaranoams.azurewebsites.net/",
+    link: "https://store1.oyelami.me/dashboard/app",
   },
   {
     img: { port1 },
