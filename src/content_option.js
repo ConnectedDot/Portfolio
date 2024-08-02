@@ -284,9 +284,9 @@ const contactConfig = {
     "I'm a Research Manager, providing digital, marketing and media support to businesses (both P2P and B2B).",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "service_g60lp9i",
-  YOUR_TEMPLATE_ID: "template_f0nmnj9",
-  YOUR_PUBLIC_KEY: "ZM28gd8CKnVkb_u7M",
+  YOUR_SERVICE_ID: process.env.SERVICE_ID,
+  YOUR_TEMPLATE_ID: process.env.TEMPLATE_ID,
+  YOUR_PUBLIC_KEY: process.env.PUBLIC_KEY
 };
 
 const socialprofils = {
