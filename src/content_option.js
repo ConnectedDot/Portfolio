@@ -1,8 +1,10 @@
 import logo from "../src/assets/20220502_150835.jpg";
 import port1 from "../src/assets/images/port1.jpg";
 import screen1 from "../src/assets/images/Screen1.png";
+import APApp from "../src/assets/gifs/ezgif.com-AP.gif";
+import GPCalculator from "../src/assets/gifs/ezgif.com-GP.gif";
 
-const logotext = "THEOPHILUS";
+const logotext = "THEOPHILUS SAMUEL";
 const logobrand = "ConnectedDot";
 const meta = {
   title: "  Theophilus Samuel",
@@ -18,15 +20,14 @@ const introdata = {
     third: "I develop responsive front-ends",
     fourth: "Very much part of the Open Source",
   },
-  description:
-    "I'm a Research Manager, providing digital, marketing and media support to businesses (both P2P and B2B). Also an accelerator, responsible for some of Harambee's key learning and knowledge streams, that includes providing education, opportunities for youth in the space of micro-technology. Also an economist & policy strategist passionate about optimizing the conditions for human thriving. My work focuses on understanding the policy building blocks and helping Startups solve complex problems. To cap, I have more than 5 Year experience as a media personnel who featured for multiple projects for brands and Startups in boosting online presence, video-conferencing and webinars.",
+  description: `A seasoned IT professional and frontend developer with a passion for software engineering, I bring a wealth of experience and expertise to every project I undertake. My commitment to excellence, coupled with a relentless drive for innovation, defines my approach to problem-solving in the dynamic world of technology. Also a collaborative team player with a passion for thoughtful UI's, and collaboration. I enjoy being part of a team, as well as thriving in positive working environment, and to consistently exceed expectations that make others stop and think. Also a  Research Manager, providing digital, marketing and media support to businesses (both P2P and B2B). Also an accelerator, responsible for some of Harambee's key learning and knowledge streams, that includes providing education, opportunities for youth in the space of micro-technology.`,
   your_img_url: { logo },
 };
 
 const dataabout = {
   title: "A bit about myself",
   aboutme:
-    "I'm a Research Manager, providing digital, marketing and media support to businesses (both P2P and B2B). Also an accelerator, responsible for some of Harambee's key learning and knowledge streams, that includes providing education, opportunities for youth in the space of micro-technology. Also an economist & policy strategist passionate about optimizing the conditions for human thriving. My work focuses on understanding the policy building blocks and helping Startups solve complex problems. To cap, I have more than 5 Year experience as a media personnel who featured for multiple projects for brands and Startups in boosting online presence, video-conferencing and webinars.",
+    "A seasoned IT professional and frontend developer with a passion for software engineering, I bring a wealth of experience and expertise to every project I undertake. My commitment to excellence, coupled with a relentless drive for innovation, defines my approach to problem-solving in the dynamic world of technology. Also a collaborative team player with a passion for thoughtful UI's, and collaboration. I enjoy being part of a team, as well as thriving in positive working environment, and to consistently exceed expectations that make others stop and think.",
 };
 const worktimeline = [
   {
@@ -128,22 +129,21 @@ const services = [
 
 const dataportfolio = [
   {
-    img: "blob:https://vercel.com/85bc7a3b-c4fb-4412-bff6-6e6599f1c683",
-    description:
-      "Here is a Attendance Management System using QR Code and Face Scanner.",
-    link: "https://store1.oyelami.me/dashboard/app",
+    img: GPCalculator,
+    description: "A simple, yet a powerful GP calculator app.",
+    link: "https://gp-calculator.oyelami.me",
   },
   {
-    img: { port1 },
+    img: APApp,
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
+      "A web based web-app used in tracking finances and other finance related.",
     link: "https://my-pokemons.netlify.app/",
   },
   {
     img: "https://picsum.photos/400/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "A referal based system for a church in the US, to help in tracking members and their communities.",
+    link: "https://www.shepherdsfieldpartners.com/",
   },
   {
     img: "https://picsum.photos/400/600/?grayscale",

@@ -31,30 +31,11 @@ export const About = () => {
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
-              <p>{dataabout.aboutme}</p>
+              <h4>{dataabout.aboutme}</h4>
             </div>
           </Col>
         </Row>
-        {/* <Row className=" sec_sp">
-          <Col lg="5">
-            <h2 className="color_sec py-4">Work Timline</h2>
-          </Col>
-          <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </Col>
-        </Row> */}
+
         <Row className="sec_sp">
           <Col lang="5">
             <h2 className="color_sec py-4">Services</h2>
@@ -63,8 +44,8 @@ export const About = () => {
             {services.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
+                  <h3 className="service__title">{data.title}</h3>
+                  <h4 className="service_desc">{data.description}</h4>
                 </div>
               );
             })}

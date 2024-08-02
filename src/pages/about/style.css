@@ -22,7 +22,8 @@
   /* border: 1px solid rgb(85, 83, 83); */
   border-radius: 5px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 200;
   margin-top: calc(0.5rem + 1.128vw);
   margin-bottom: calc(0.5rem + 2.128vw);
 }

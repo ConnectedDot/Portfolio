@@ -7,6 +7,7 @@ import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
+
   const currentYear = new Date().getFullYear();
   const copyrightSymbol = "\u00A9";
   const handleToggle = () => {
@@ -23,6 +24,7 @@ const Headermain = () => {
           </Link>
           <div className="d-flex align-items-center">
             <Themetoggle />
+
             <button className="menu__button  nav_ac" onClick={handleToggle}>
               {!isActive ? <VscClose /> : <VscGrabber />}
             </button>
